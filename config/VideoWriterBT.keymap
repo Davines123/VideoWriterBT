@@ -24,9 +24,9 @@
 			// | Pg Up | Caps   | Ctrl  | A    | S   | D   | F   | G   | H     | G      | H   | J   | K   | L   | ;    | '     | Enter | Enter  |
 			// | Pg Dn | Up     | Shift | Z    | X   | C   | V   | B   | N     | B      | N   | M   | ,   | .   | /    | Shift | Up    |        |
 		bindings = <
-																	&kp UP
-			&bt BT_PRV &ext_power EP_TOG &bt BT_NXT 	&trns &trns &trns &trns 	&trns &trns &trns 		  &kp LEFT &kp RIGHT	
-																	&kp DOWN 
+																			  &kp UP
+			&bt BT_PRV &ext_power EP_TOG &bt BT_NXT 	&kp HOME &kp PAGE_UP &kp PAGE_DOWN &kp END 	&kp C(X) &kp C(C) &kp C(V)   &kp LEFT &kp RIGHT	
+																	                &kp DOWN 
 			&kp ESC   &kp N1    &kp N2   &kp N3    &kp N4    &kp N5    &kp N6    &kp EQUAL  &kp N7    &kp N8    &kp N9   &kp N0    &kp MINUS &kp BSPC   &kp DELETE
 			&kp TAB   &kp Q  &kp W &kp F    &kp P  &kp G  		&kp LBKT	 &kp J    &kp L    &kp U    &kp Y    &kp SEMI  &kp APOS
 			&kp LCTRL   &kp A     &kp R   &kp S    &kp T    &kp D     &kp RBKT     &kp H     &kp N    &kp E      &kp I     &kp O    &kp ENTER 	&kp PRINTSCREEN
@@ -44,13 +44,14 @@
 			// | | | | | | | | | | | | | | | | | | |
 			// | | | | | | | | | | | | | | | | | | |
 			bindings = <
-																	&kp UP
-			&kp &kp &kp  			&kp &kp &kp &kp 				&kp &kp &kp 			&kp LEFT &kp DOWN &kp RIGHT	
-			&kp GRAVE   &kp F1    &kp F2   &kp F3    &kp F4    &kp F5    &kp F6    &kp F12     &kp F7   &kp F8  &kp F9    &kp F10    &kp F11  &kp BSPC   &kp 
-			&kp TAB   &kp Q  &kp W &kp F    &kp P  &kp G  &kp LBKT &kp J    &kp L    &kp U    &kp Y    &kp SEMI  &kp APOS
-			&kp LCTRL   &kp A     &kp R   &kp S    &kp T    &kp D     &kp RBKT     &kp H     &kp N    &kp E      &kp I     &kp O    &kp ENTER 		&kp 
-			&kp LSHFT   &kp Z    &kp X    &kp C     &kp V     &kp B     &kp SLASH     &kp K      &kp M     &kp COMMA     &kp DOT    &lt LOWER CAPS		&kp 
-									&kp LALT &kp SPACE      &kp RMETA
+																			  &kp C_VOL_UP
+			&bt BT_PRV &bootloader EP_TOG &bt BT_NXT 	&kp HOME &kp PAGE_UP &kp PAGE_DOWN &kp END 	&kp C(X) &kp C(C) &kp C(V)   &kp C_PREV &kp C_NEXT
+																	                &kp C_VOL_DN 
+			&kp GRAVE   &kp N1    &kp N2   &kp N3    &kp N4    &kp N5    &kp N6    &kp EQUAL  &kp N7    &kp N8    &kp N9   &kp N0    &kp MINUS &kp BSPC   &kp DELETE
+			&kp TAB   &kp Q  &kp W &kp F    &kp P  &kp G  		&kp LBKT	 &kp J    &kp L    &kp U    &kp Y    &kp SEMI  &kp APOS
+			&kp LCTRL   &kp A     &kp R   &kp S    &kp T    &kp D     &kp RBKT     &kp H     &kp N    &kp E      &kp I     &kp O    &kp ENTER 	&kp PRINTSCREEN
+			&kp LSHFT   &kp Z    &kp X    &kp C     &kp V     &kp B     &kp SLASH     &kp K      &kp M     &kp COMMA     &kp DOT    &lt LOWER CAPS		&mt LG(L)
+									&kp LALT &kp C_PP     &kp RMETA
 			
 			>;
 		};
