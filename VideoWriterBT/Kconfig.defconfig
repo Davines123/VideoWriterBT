@@ -1,0 +1,6 @@
+if VideoWriterBT
+
+config ZMK_KEYBOARD_NAME
+    default "VideoWriterBT"
+
+endif
